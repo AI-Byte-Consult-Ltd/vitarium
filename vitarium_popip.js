@@ -6,7 +6,7 @@
         secondaryColor: "#128C7E",
         backgroundColor: "#ffffff",
         fontColor: "#111111",
-        welcomeMessage: "Hello! How can we help you today?",
+        welcomeMessage: "Hallo! Hoe kunnen we u vandaag helpen?",
         phone: "359988899109",
         defaultMessage: "Hallo, ik ben geïnteresseerd in uw producten." // Dutch pre-filled text
     };
@@ -160,12 +160,23 @@
         </div>
 
         <div id="vitarium-input">
-            <div id="vitarium-input-inner">
-                <input type="text" id="vitarium-input-text" placeholder="Type a message..." value="${config.defaultMessage}" />
-                <button>Send</button>
-            </div>
-            <div id="vitarium-footer">by NICS AI</div>
-        </div>
+    <div id="vitarium-input-inner">
+        <input 
+            type="text" 
+            id="vitarium-input-text" 
+            placeholder="Type a message..." 
+            value="${config.defaultMessage}" 
+        />
+        <button>Send</button>
+    </div>
+
+    <div id="vitarium-footer">
+        <a href="https://aibyteconsult.com" target="_blank" style="color: inherit; text-decoration: none;">
+            by NICS AI Ecosystem
+        </a>
+    </div>
+</div>
+
     `;
     document.body.appendChild(widget);
 
